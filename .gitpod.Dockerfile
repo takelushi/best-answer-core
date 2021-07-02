@@ -5,5 +5,5 @@ RUN echo 'source $HOME/.poetry/env' >> /home/gitpod/.bashrc
 
 # RUN pyenv install 3.8.10
 # ENV PIPENV_VENV_IN_PROJECT=1
-RUN whoami >> /tmp/docker.txt
-# virtualenvs.in-project
+ENV PATH="${PATH}:/home/gitpod/.poetry/bin"
+RUN poetry config virtualenvs.in-project true
