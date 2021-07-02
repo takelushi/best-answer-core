@@ -1,4 +1,5 @@
+# See: https://www.gitpod.io/docs/config-gitpod-file
 image:
   file: .gitpod.Dockerfile
-# image: node:alpine
-# image: gitpod/workspace-full
+tasks:
+  - init: poetry install
