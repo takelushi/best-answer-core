@@ -1,0 +1,4 @@
+image:
+  file: .gitpod.Dockerfile
+# image: node:alpine
+# image: gitpod/workspace-full
